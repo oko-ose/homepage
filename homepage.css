@@ -5,43 +5,69 @@ body{
     color: black;
     font-family: "Open Sans" sans-serif; 
 }
-.container{
-    margin: 0 auto;
-    width: 80%;
-    overflow: auto;
-    clear: both;
-}
+
 header{
+    position: fixed;
+    top: 0;
     background-color: black;
+    height: 3.8rem;
+    font-size: 1rem;  
+    width: 100%;
+    z-index: 2;
+    margin: 0 auto;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 !important;
+    
+}
+header li{
+    list-style: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+}
+
+#img{
+    height: 2rem; 
+    border-radius: 50%;  
 }
 h1{
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: purple;
-    float: left;
+    padding: 0 !important;
+ 
 }
-.img{
-    width: 80px;
-    height: 60px;
-    margin-left: 42rem;
-    
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+    display: flex;
 }
+
 .sub-heading{
     background-color: purple;
     height: 40px;
     border-radius: 5px;
     border:peachpuff 1px solid;
     color: white;
+    position: relative;
+    margin-top: 4rem;
 }
 .sub-heading ul{
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.sub-heading ul li{
-    float: left;
-    display: inline;
+.sub-heading ul li{ 
+    display: inline-flex;
     margin-right: 3px;
+    justify-content: center;
+    align-items: center;
 }
 .sub-heading ul li a{
     color: #fff;
@@ -62,15 +88,14 @@ a:hover{
 }
 .content{
     overflow: auto;
-    width: 70%;
-    float: left;
+    width: 70%;  
     background-image: url("https://res.cloudinary.com/onose/image/upload/v1584902341/bucakkopbaol3xhc9sue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 15px;
     margin-top: 10px;
     border-radius: 5px;
-    border: peachpuff 1px solid;
+    border: peachpuff 1px solid;   
     }
 h2{
     color: rgb(71, 7, 71);
@@ -85,8 +110,9 @@ p{
 }
 aside{
     width: 30%;
-    float: left;
+    float: right;
     color: black;
+    
 }
 h3{
     font-size: 20px;
